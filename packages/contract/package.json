@@ -1,0 +1,14 @@
+{
+  "name": "tabtouch-push-contract",
+  "version": "5.0.4",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "RWWA",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}

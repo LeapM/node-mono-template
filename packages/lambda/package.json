@@ -1,0 +1,27 @@
+{
+  "name": "tabtouch-push-lambda",
+  "version": "5.0.4",
+  "description": "Consumes events from Kinesis Data stream, and publishes them to a fan-out service.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.rwwa.com.au:rwwa-aws/tabtouch-push/consumer.git"
+  },
+  "publishConfig": {
+    "registry": "http://artifactory.rwwa.com.au:8081/artifactory/api/npm/rwwa-npm/"
+  },
+  "keywords": [],
+  "author": "RWWA",
+  "license": "UNLICENSED",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "tabtouch-push-contract": "^5.0.4"
+  },
+  "bundleDependencies": [
+    "aws4"
+  ]
+}

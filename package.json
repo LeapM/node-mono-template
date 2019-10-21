@@ -1,0 +1,40 @@
+{
+  "name": "tabtouch-push-monorepo",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/aws4"
+    ]
+  },
+  "scripts": {
+    "lerna": "lerna",
+    "clean": "lerna clean && rimraf node_modules",
+    "build": "lerna run build",
+    "test": "jest --silent"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
+    "lerna": "*",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "yarn": "^1.17.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "version": "0.0.0"
+}
